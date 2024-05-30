@@ -1,0 +1,40 @@
+/* CSS for Learn More Section */
+
+.learn-more {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.learn-more-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.learn-more-content h2 {
+    position: relative;
+    top: 40px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.learn-more-content p {
+    margin-top: 39px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.learn-more-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.learn-more-images img {
+    width: 250px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 20px;
+}

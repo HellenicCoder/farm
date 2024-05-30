@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmGreen</title>
+    <link rel="stylesheet" href="farm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="images/farm-house_4388963.png" alt="Farm Logo"></a>
+            <span class="logo-title">FarmGreen</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About Us</a></li>
+                <li><a href="#section3">Products</a></li>
+                <li><a href="#section4">Farm Tour</a></li>
+                <li><a href="#section5">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="submit" onclick="search()">Search</button>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="section1">
+        <div class="hero-content">
+            <h1>Welcome to <span> FarmGreen </span></h1>
+            <p>Discover the beauty of nature and the bounty of our farm</p>
+            <a href="#" class="btn">Take a Tour</a>
+        </div>
+    </section>
+
+    <section class="about-us" id="section2">
+        <div class="container">
+            <div class="about-content">
+                <h2>Welcome to <span>GreenFarm</span></h2>
+                <p>GreenHarvest Farm is committed to sustainable farming practices, producing fresh, organic produce for our community. Located in the serene countryside, our farm nurtures a variety of crops and livestock, ensuring high-quality, nutritious products.</p>
+                <p>At GreenFarm, we believe in the importance of connecting people with the source of their food. Through educational programs and farm tours, we aim to inspire appreciation for nature and promote healthy living.</p>
+                <p>Join us in our mission to cultivate a greener, healthier future for generations to come!</p>
+                <div class="cta-buttons">
+                    <a href="learn_more.html" class="btn" target="_blank">Learn More</a>
+                    <a href="products.html" class="btn" target="_blank">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+<section class="product-showcase" id="section3">
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="productGrid">
+            <!-- Product items will be dynamically generated here -->
+        </div>
+    </div>
+</section>
+    <!-- Farm Tour Section -->
+<section class="farm-tour" id="section4">
+    <h2>Farm Tours</h2>
+    <div class="container">
+        <div class="tour-items">
+            <!-- Tour items will be dynamically generated here -->
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog" id="section5">
+    <h2>Latest Blog Posts</h2>
+    <div class="container">
+        <div class="blog-posts">
+            <!-- Blog posts will be dynamically generated here -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About Us</a></li>
+                <li><a href="#section3">Products</a></li>
+                <li><a href="#section4">Farm Tour</a></li>
+                <li><a href="#section5">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Connect with Us</h3>
+            <ul class="social-media">
+                <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 FarmGreen Avenue<br>City, State ZIP<br>Email: info@farmgreen.com<br>Phone: 123-456-7890</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Your FarmGreen. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="farm.js"></script>
+</body>
+</html>

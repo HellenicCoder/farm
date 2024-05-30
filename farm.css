@@ -1,0 +1,508 @@
+/* styles.css */
+
+/* Reset styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    display: inline-block; /* Change display to inline-block */
+    vertical-align: middle; /* Align vertically */
+}
+
+.logo-title {
+    display: inline-block; /* Change display to inline-block */
+    font-size: 16px;
+    color: #45a049;
+    margin-left: 2px; /* Adjust margin as needed */
+    vertical-align: middle; /* Align vertically */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Search bar styles */
+.search-bar {
+    position: relative;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.hero {
+    display: flex;
+    justify-content: center; /* horizontally center the content */
+    align-items: center; /* vertically center the content */
+    height: 100vh;
+    background-image: url('farm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+h1 {
+    font-size: 36px; 
+    color: #f2f2f2; 
+    text-align: center;
+}
+
+span {
+    color: #45a049; /* Set a different color for the span text */
+    font-weight: bold; /* Make the span text bold */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px 5px 20px 5px;
+}
+/* About Us section styles */
+.about-us {
+    padding: 80px 0;
+    background-color: #dee2e6;
+    text-align: center;
+}
+
+.about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us .about-content {
+    margin-bottom: 40px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.about-us .cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-us .btn:hover {
+    background-color: #45a049;
+}
+
+/* Product Showcase section styles */
+.product-showcase {
+    padding: 80px 0;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.product-showcase h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.product-item-content {
+    padding: 20px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .btn:hover {
+    background-color: #45a049;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Farm Tour section styles */
+.farm-tour {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.farm-tour h2 {
+    display: block;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.tour-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px;
+}
+
+.tour-item img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.tour-item-content {
+    padding: 20px;
+}
+
+.tour-item h3 {
+    display: block;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tour-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tour-item .btn {
+    display: block;
+    width: 80%;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tour-item .btn:hover {
+    background-color: #45a049;
+}
+
+.tour-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Blog section styles */
+.blog {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.blog-posts {
+    display: grid; /* Use CSS grid for more consistent layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Add some space between grid items */
+}
+
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Round only the top corners */
+}
+
+.blog-post-content {
+    padding: 20px;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.blog-post .btn {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.blog-post .btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #dee2e6;
+    color: #333;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #eee;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}

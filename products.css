@@ -1,0 +1,157 @@
+/* .product-showcase {
+    padding: 80px 0;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.product-showcase h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: inline-block;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+} 
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.product-item img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.product-item-content {
+    padding: 20px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-item .buy-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .buy-btn:hover {
+    background-color: #45a049;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+} */
+/* Style the product showcase section */
+.product-showcase {
+    background-color: #f5f5f5; /* Light background for better readability */
+    padding: 2rem 0; /* Add some padding for visual breathing space */
+  }
+  
+  /* Style the container element for better layout */
+  .container {
+    max-width: 1000px; /* Set a maximum width for responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Style the product grid */
+ /* Style the product item container */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Responsive grid layout */
+    gap: 5rem; /* Spacing between product items */
+    /* Added property for horizontal centering */
+    margin: 0 auto;
+    justify-content: start;
+    position: relative;
+  }
+  
+  
+  /* Style the product item */
+  .product-item {
+    background-color: #fff; /* White background for product details */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    padding: 1rem;
+    text-align: center; /* Center text content */
+    position: relative;
+  }
+  
+  /* Style the product image */
+  .product-item img {
+    max-width: 100%; /* Ensure image scales proportionally */
+    height: auto; /* Maintain image aspect ratio */
+    margin-bottom: 1rem; /* Spacing between image and product name */
+  }
+  
+  /* Style the product name */
+  .product-item h2 {
+    position: absolute;
+    top: 30px;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 0.5rem; /* Spacing between name and description */
+  }
+  
+  /* Style the product description */
+  .product-item p {
+    font-size: 0.9rem; /* Adjust font size for descriptions */
+    line-height: 1.5; /* Improve readability with line spacing */
+  }
+  
+
+/* Style the buy button */
+.product-item button {
+    position: absolute; /* Position the button absolutely within the product item */
+    bottom: 1rem; /* Position the button 1rem from the bottom */
+    left: 0; /* Align the button to the left edge of the product item */
+    width: 99%; /* Make the button span the entire width of the product item */
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Consistent rounded corners */
+    cursor: pointer; /* Indicate clickable behavior */
+    background-color: #4CAF50; /* Darker background for the button */
+    color: #fff; /* White text for better contrast */
+    transition: background-color 0.2s ease-in-out; /* Add a smooth hover effect */
+}
+  
+  /* Add a hover effect for the buy button */
+.product-item button:hover {
+    background-color: #45a049; /* Darken background on hover */
+}
